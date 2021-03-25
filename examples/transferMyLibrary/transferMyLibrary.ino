@@ -12,20 +12,21 @@
 #include <DFRobot_Sensor_Hyy.h>  
 
 //模式(mode)是根据定义的三个枚举变量确定，这里eLowPower（用于指定功耗的枚举变量）值是1，其他均为0，即正常模式
-DFRobot_Sensor_Hyy_IIC sensor(&Wire, DFRobot_Sensor_IIC::eLowPower);  
+DFRobot_Sensor_Hyy_IIC sensor(&Wire, DFRobot_Sensor_Hyy::eLowPower);  
 
 void setup(void)
 {
   Serial.begin(9600);        //初始化串口，波特率
-  while(sensor.begin() != 0){
-  Serial.println("arduino发现初始化芯片失败，请确认芯片连接是否正确");      //串口上打印错误
-  delay(1000);
+  while(sensor.begin() != 0)
+  {
+    Serial.println("arduino发现初始化芯片失败，请确认芯片连接是否正确");      //串口上打印错误
+    delay(1000);
   }
 }
 
 void loop(void)
 {
-  /*读取光线强度*/
+  /*读取声音强度*/
   uint16_t soundStrength = sensor.soundStrengthDB();
   Serial.print("sound strength=");
   Serial.print(soundStrength);

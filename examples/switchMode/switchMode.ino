@@ -10,10 +10,9 @@
  * @get from https://www.dfrobot.com
  * @url https://github.com/qsjhyy/DFRobot_Sensor
  */
-#include <DFRobot_Sensor.h>
-#include <SPI.h>
+#include <DFRobot_Sensor_Hyy.h>
 
-DFRobot_Sensor_SPI sensor(&SPI, DFRobot_Sensor::eLowPower+DFRobot_Sensor::eNomalPrecision, 13);
+DFRobot_Sensor_Hyy_SPI sensor(&SPI, DFRobot_Sensor_Hyy::eLowPower+DFRobot_Sensor_Hyy::eNomalPrecision, 13);
 
 void setup(void)
 {

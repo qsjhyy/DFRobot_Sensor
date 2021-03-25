@@ -6,56 +6,55 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-DFRobot_Sensor_Hyy            KEYWORD1
-DFRobot_Sensor_Hyy_IIC        KEYWORD1
-DFRobot_Sensor_Hyy_SPI        KEYWORD1
+DFRobot_Sensor_Hyy		KEYWORD1
+DFRobot_Sensor_Hyy_IIC	KEYWORD1
+DFRobot_Sensor_Hyy_SPI	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-begin                     KEYWORD2
-soundStrengthDB           KEYWORD2
-lightStrengthLux          KEYWORD2
-switchMode                KEYWORD2
-write_bytes               KEYWORD2
-setLED                    KEYWORD2
+begin					KEYWORD2
+soundStrengthDB			KEYWORD2
+lightStrengthLux		KEYWORD2
+switchMode				KEYWORD2
+setLED					KEYWORD2
+write_bytes				KEYWORD2
 
 
 #######################################
 # Instances (KEYWORD2)
 #######################################
 
-controlLed                KEYWORD2
-readLight                 KEYWORD2
-readSound                 KEYWORD2
-switchMode                KEYWORD2
+controlLed				KEYWORD2
+readLight				KEYWORD2
+readSound				KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
 #######################################
 
-COLOR_RGB565_BLACK        LITERAL1
-COLOR_RGB565_NAVY         LITERAL1
-COLOR_RGB565_DGREEN       LITERAL1
-COLOR_RGB565_DCYAN        LITERAL1
-COLOR_RGB565_PURPLE       LITERAL1
-COLOR_RGB565_MAROON       LITERAL1
-COLOR_RGB565_OLIVE        LITERAL1   
-COLOR_RGB565_LGRAY        LITERAL1
-COLOR_RGB565_DGRAY        LITERAL1
-COLOR_RGB565_BLUE         LITERAL1
-COLOR_RGB565_GREEN        LITERAL1
-COLOR_RGB565_CYAN         LITERAL1
-COLOR_RGB565_RED          LITERAL1   
-COLOR_RGB565_MAGENTA      LITERAL1
-COLOR_RGB565_YELLOW       LITERAL1     
-COLOR_RGB565_WHITE        LITERAL1
-eNormalPower              LITERAL1
-eLowPower                 LITERAL1
-eNormalSpeed              LITERAL1
-eHighSpeed                LITERAL1
-eLowPrecision             LITERAL1
-eNomalPrecision           LITERAL1
-eHighPrecision            LITERAL1
-eUltraPrecision           LITERAL1
+COLOR_RGB565_BLACK		LITERAL1
+COLOR_RGB565_NAVY		LITERAL1
+COLOR_RGB565_DGREEN		LITERAL1
+COLOR_RGB565_DCYAN		LITERAL1
+COLOR_RGB565_PURPLE		LITERAL1
+COLOR_RGB565_MAROON		LITERAL1
+COLOR_RGB565_OLIVE		LITERAL1   
+COLOR_RGB565_LGRAY		LITERAL1
+COLOR_RGB565_DGRAY		LITERAL1
+COLOR_RGB565_BLUE		LITERAL1
+COLOR_RGB565_GREEN		LITERAL1
+COLOR_RGB565_CYAN		LITERAL1
+COLOR_RGB565_RED		LITERAL1   
+COLOR_RGB565_MAGENTA	LITERAL1
+COLOR_RGB565_YELLOW		LITERAL1     
+COLOR_RGB565_WHITE		LITERAL1
+eNormalPower			LITERAL1
+eLowPower				LITERAL1
+eNormalSpeed			LITERAL1
+eHighSpeed				LITERAL1
+eLowPrecision			LITERAL1
+eNomalPrecision			LITERAL1
+eHighPrecision			LITERAL1
+eUltraPrecision			LITERAL1

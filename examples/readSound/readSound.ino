@@ -12,16 +12,16 @@
  * @get from https://www.dfrobot.com
  * @url https://github.com/qsjhyy/DFRobot_Sensor
  */
-#include <DFRobot_Sensor.h>
-#include <Wire.h>
+#include <DFRobot_Sensor_Hyy.h>
 
-DFRobot_Sensor_IIC sensor(&Wire, DFRobot_Sensor::eLowPower+DFRobot_Sensor::eNomalPrecision);
+DFRobot_Sensor_Hyy_IIC sensor(&Wire, DFRobot_Sensor_Hyy::eLowPower+DFRobot_Sensor_Hyy::eNomalPrecision);
 
 void setup(void)
 {
   Serial.begin(115200);
   /*在这里一致等到芯片初始化完成才能退出*/
-  while(sensor.begin() != 0){
+  while(sensor.begin() != 0)
+  {
     Serial.println("初始化芯片失败，请确认芯片连接是否正确");
     delay(1000);
   }
@@ -29,10 +29,10 @@ void setup(void)
 
 void loop(void)
 {
-  /*读取光线强度*/
-  uint16_t lightStrength = sensor.soundStrengthDB();
+  /*读取声音强度*/
+  uint16_t soundStrength = sensor.soundStrengthDB();
   Serial.print("Sound Strength=");
-  Serial.print(lightStrength);
+  Serial.print(soundStrength);
   Serial.println(" DB");
   delay(1000);
 }

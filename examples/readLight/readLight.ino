@@ -13,7 +13,7 @@
  */
 #include <DFRobot_Sensor_Hyy.h>
 
-DFRobot_Sensor_IIC sensor(&Wire, DFRobot_Sensor::eLowPower+DFRobot_Sensor::eNomalPrecision);
+DFRobot_Sensor_Hyy_IIC sensor(&Wire, DFRobot_Sensor_Hyy::eLowPower+DFRobot_Sensor_Hyy::eNomalPrecision);
 
 void setup(void)
 {

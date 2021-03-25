@@ -12,14 +12,15 @@
  */
 #include <DFRobot_Sensor_Hyy.h>
 
-DFRobot_Sensor_Hyy_IIC sensor(&Wire, DFRobot_Sensor::eLowPower+DFRobot_Sensor::eNomalPrecision);
+DFRobot_Sensor_Hyy_IIC sensor(&Wire, DFRobot_Sensor_Hyy::eLowPower+DFRobot_Sensor_Hyy::eNomalPrecision);
 //DFRobot_Sensor_IIC sensor;//这样定义会使用默认参数，&Wire  eNomalPrecision+eNormalSpeed+eNormalPower
 
 void setup(void)
 {
   Serial.begin(115200);
   /*在这里一致等到芯片初始化完成才能退出*/
-  while(sensor.begin() != 0){
+  while(sensor.begin() != 0)
+  {
     Serial.println("初始化芯片失败，请确认芯片连接是否正确");
     delay(1000);
   }

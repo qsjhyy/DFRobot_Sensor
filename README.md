@@ -59,7 +59,7 @@ To use this library, first download the library file, paste it into the \Arduino
 
 	/**
 	* @brief 设置LED灯的颜色
-    * @note  设置颜色后，0.2秒后生效
+	* @note  设置颜色后，0.2秒后生效
 	* @param r 红色通道颜色值，范围0-255
 	* @param g 绿色通道颜色值，范围0-255
 	* @param b 蓝色通道颜色值，范围0-255
@@ -93,7 +93,7 @@ micro:bit        |      √       |              |             |
 
 ## Credits
 
-Written by hyy(qsj.huang@dfrobot.com), 2021. (Welcome to our [website](https://www.dfrobot.com/))
+Written by qsj(qsj.huang@dfrobot.com), 2021. (Welcome to our [website](https://www.dfrobot.com/))
 
 
 
