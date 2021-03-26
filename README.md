@@ -37,25 +37,29 @@ To use this library, first download the library file, paste it into the \Arduino
   * @brief 初始化函数
   * @return 返回0表示初始化成功，返回其他值表示初始化失败
   */
-	int begin(void);
+  
+  int begin(void);
   
   /**
   * @brief 获取声音强度值
   * @return 返回声音强度，单位是DB
   */
-	uint16_t getSoundStrength(void);
+  
+  uint16_t getSoundStrength(void);
   
   /**
   * @brief 获取光线强度值
   * @return 返回光线强度，单位是流明
   */
-	uint16_t getLightStrength(void);
+  
+  uint16_t getLightStrength(void);
   
   /**
   * @brief 切换模式
   * @return 返回true操作成功, 返回false操作失败
   */
-	uint8_t switchMode(uint8_t mode);
+  
+  uint8_t switchMode(uint8_t mode);
   
   /**
   * @brief 设置LED灯的颜色
@@ -64,14 +68,16 @@ To use this library, first download the library file, paste it into the \Arduino
   * @param g 绿色通道颜色值，范围0-255
   * @param b 蓝色通道颜色值，范围0-255
   */
-	void setLED(uint8_t r, uint8_t g, uint8_t b);
+  
+  void setLED(uint8_t r, uint8_t g, uint8_t b);
   
   /**
   * @brief 设置LED灯的颜色
   * @note  设置颜色后，0.2秒后生效
   * @param color rgb565格式的颜色值
   */
-	void setLED(uint16_t color);
+  
+  void setLED(uint16_t color);
 ```
 
 ## Compatibility
